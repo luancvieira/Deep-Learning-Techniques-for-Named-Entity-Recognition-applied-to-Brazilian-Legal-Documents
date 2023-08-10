@@ -4,7 +4,7 @@ This article explores the application of deep learning techniques for named enti
 
 The report can be seen here: [Report](Deep Learning Techniques for Named Entity Recognition applied to Brazilian Legal Documents.pdf).
 
-[LeNER-Br] (https://github.com/peluz/lener-br) (Luz de Araujo et al., 2018) is a manually annotated Portuguese language data set for the recognition of named entities, specifically focused on legal documents. It includes named entities related to legislations and legal
+[LeNER-Br](https://github.com/peluz/lener-br) (Luz de Araujo et al., 2018) is a manually annotated Portuguese language data set for the recognition of named entities, specifically focused on legal documents. It includes named entities related to legislations and legal
 cases, aiming to enhance the extraction of lawful knowledge.
 
 This project leveraged 3 different approaches to perform the taks:
