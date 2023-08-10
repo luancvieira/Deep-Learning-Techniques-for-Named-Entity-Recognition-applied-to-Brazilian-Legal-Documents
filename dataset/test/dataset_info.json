@@ -1,0 +1,85 @@
+{
+  "builder_name": "lener_br",
+  "citation": "\n@inproceedings{luz_etal_propor2018,\n    author = {Pedro H. {Luz de Araujo} and Te'{o}filo E. {de Campos} and\n    Renato R. R. {de Oliveira} and Matheus Stauffer and\n    Samuel Couto and Paulo Bermejo},\n    title = {{LeNER-Br}: a Dataset for Named Entity Recognition in {Brazilian} Legal Text},\n    booktitle = {International Conference on the Computational Processing of Portuguese ({PROPOR})},\n    publisher = {Springer},\n    series = {Lecture Notes on Computer Science ({LNCS})},\n    pages = {313--323},\n    year = {2018},\n    month = {September 24-26},\n    address = {Canela, RS, Brazil},\n    doi = {10.1007/978-3-319-99722-3_32},\n    url = {https://cic.unb.br/~teodecampos/LeNER-Br/},\n}\n",
+  "config_name": "lener_br",
+  "dataset_size": 5527282,
+  "description": "\nLeNER-Br is a Portuguese language dataset for named entity recognition\napplied to legal documents. LeNER-Br consists entirely of manually annotated\nlegislation and legal cases texts and contains tags for persons, locations,\ntime entities, organizations, legislation and legal cases.\nTo compose the dataset, 66 legal documents from several Brazilian Courts were\ncollected. Courts of superior and state levels were considered, such as Supremo\nTribunal Federal, Superior Tribunal de Justi\u00e7a, Tribunal de Justi\u00e7a de Minas\nGerais and Tribunal de Contas da Uni\u00e3o. In addition, four legislation documents\nwere collected, such as \"Lei Maria da Penha\", giving a total of 70 documents\n",
+  "download_checksums": {
+    "https://github.com/peluz/lener-br/raw/master/leNER-Br/train/train.conll": {
+      "num_bytes": 2142199,
+      "checksum": null
+    },
+    "https://github.com/peluz/lener-br/raw/master/leNER-Br/dev/dev.conll": {
+      "num_bytes": 402497,
+      "checksum": null
+    },
+    "https://github.com/peluz/lener-br/raw/master/leNER-Br/test/test.conll": {
+      "num_bytes": 438441,
+      "checksum": null
+    }
+  },
+  "download_size": 2983137,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "O",
+          "B-ORGANIZACAO",
+          "I-ORGANIZACAO",
+          "B-PESSOA",
+          "I-PESSOA",
+          "B-TEMPO",
+          "I-TEMPO",
+          "B-LOCAL",
+          "I-LOCAL",
+          "B-LEGISLACAO",
+          "I-LEGISLACAO",
+          "B-JURISPRUDENCIA",
+          "I-JURISPRUDENCIA"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://cic.unb.br/~teodecampos/LeNER-Br/",
+  "license": "",
+  "size_in_bytes": 8510419,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 3984173,
+      "num_examples": 7828,
+      "dataset_name": "lener_br"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 719417,
+      "num_examples": 1177,
+      "dataset_name": "lener_br"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 823692,
+      "num_examples": 1390,
+      "dataset_name": "lener_br"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}
